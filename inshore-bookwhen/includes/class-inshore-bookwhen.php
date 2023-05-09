@@ -35,6 +35,7 @@ class InShore_Bookwhen
      */
     protected static $instance = null;
 
+    protected $pluginName = 'inshore-bookwhen';
     protected static $options = null;
 
     /**
@@ -44,6 +45,7 @@ class InShore_Bookwhen
     {
         $this->defineConstants();
         $this->includes();
+        $this->admin_hooks();
         $this->init_hooks();
     }
 
@@ -68,7 +70,7 @@ class InShore_Bookwhen
      * Define constant if not already set.
      *
      * @param string      $name  Constant name.
-     * @param string|bool $value Constant value.
+     * @param bool|string $value Constant value.
      * @since 1.0
      */
     private function define($name, $value)
@@ -100,6 +102,10 @@ class InShore_Bookwhen
         require_once INSHORE_BOOKWHEN_PLUGIN_DIR . 'includes/admin/class-inshore-bookwhen-settings.php';
     }
     
+    private function admin_hooks() {
+        $plugin_admin = new InShore_Bookwhen_Settings( 'inshore-bookwhen' );
+        wp_enqueue_script('admin-inshore-bookwhen-tailwind-css', 'https://cdn.tailwindcss.com>'); //@todo check admin only
+    }
     
     /**
      * Hook into actions and filters.
@@ -108,7 +114,7 @@ class InShore_Bookwhen
      */
     private function init_hooks()
     {   
-        add_filter('plugin_action_links_' . INSHORE_BOOKWHEN_BASE, array($this, 'inshore_bookwhen_settings_link'));
+        add_filter('plugin_action_links_' . INSHORE_BOOKWHEN_BASE, [$this, 'inshore_bookwhen_settings_link']);
     }
     
     
@@ -119,7 +125,7 @@ class InShore_Bookwhen
      */
     public function inshore_bookwhen_settings_link($links)
     {
-        $link = admin_url('admin.php?page=inshore-bookwhen');
+        $link = admin_url('admin.php?page=bookwhen');
         $settings_link = sprintf(__('<a href="%1$s">Settings</a>', 'inshore-bookwhen'), esc_url($link));
         array_unshift($links, $settings_link);
         return $links;
