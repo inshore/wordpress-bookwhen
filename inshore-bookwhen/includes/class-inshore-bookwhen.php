@@ -119,7 +119,7 @@ class InShore_Bookwhen
      */
     public function inshore_bookwhen_settings_link($links)
     {
-        $link = admin_url('admin.php?page=inshore-bookwhen-settings');
+        $link = admin_url('admin.php?page=inshore-bookwhen');
         $settings_link = sprintf(__('<a href="%1$s">Settings</a>', 'inshore-bookwhen'), esc_url($link));
         array_unshift($links, $settings_link);
         return $links;

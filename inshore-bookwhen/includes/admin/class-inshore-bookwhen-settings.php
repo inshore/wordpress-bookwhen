@@ -28,28 +28,28 @@ class InShore_Bookwhen_Settings
             'inShore Bookwhen PHP SDK',
             'Bookwhen',
             'manage_options',
-            'bookwhen',
+            'inshore-bookwhen',
             array($this, 'inshore_bookwhen_options_page_html')
         );
     }
     
     public function inshore_bookwhen_settings_init() {
         // Register a new setting for "wporg" page.
-        register_setting( 'bookwhen', 'bookwhen_options' );
+        register_setting( 'inshore-bookwhen', 'bookwhen_options' );
         
         // Register a new section in the "wporg" page.
         add_settings_section(
             'inshore_bookwhen_api_key',
-            __( 'Bookwhen API Key', 'bookwhen' ), 
+            __( 'Bookwhen API Key', 'inshore-bookwhen' ), 
             array($this, 'inshore_bookwhen_api_key_callback'),
-            'bookwhen'
+            'inshore-bookwhen'
             );
         
         // Register a new field in the "wporg_section_developers" section, inside the "wporg" page.
         add_settings_field(
             'wporg_field_pill', // As of WP 4.6 this value is used only internally.
             // Use $args' label_for to populate the id inside the callback.
-            __( 'Pill', 'bookwhen' ),
+            __( 'Pill', 'inshore-bookwhen' ),
             'wporg_field_pill_cb',
             'wporg',
             'wporg_section_developers',
