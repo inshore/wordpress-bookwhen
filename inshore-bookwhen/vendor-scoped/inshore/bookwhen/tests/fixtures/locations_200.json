@@ -1,0 +1,82 @@
+{
+    "data": [
+        {
+            "id": "e3onkfe8q4x6",
+            "type": "location",
+            "attributes": {
+                "address_text": "inShore Ltd\n16 Bourne House\nSaint-Helier\nJersey\nJE2 4QE",
+                "additional_info": "",
+                "latitude": 49.1928897,
+                "longitude": -2.1068349,
+                "zoom": 15,
+                "map_url": "https://dlaqljgi7pm30.cloudfront.net/maps/slrddey1fxzq/e3onkfe8q4x6/staticmap.png?v=20230422143023"
+            },
+            "links": {
+                "self": "https://api.bookwhen.com/v2/locations/e3onkfe8q4x6"
+            }
+        },
+        {
+            "id": "e3onkfe8q4x6",
+            "type": "location",
+            "attributes": {
+                "address_text": "inShore Ltd\n16 Bourne House\nSaint-Helier\nJersey\nJE2 4QE",
+                "additional_info": "",
+                "latitude": 49.1928897,
+                "longitude": -2.1068349,
+                "zoom": 15,
+                "map_url": "https://dlaqljgi7pm30.cloudfront.net/maps/slrddey1fxzq/e3onkfe8q4x6/staticmap.png?v=20230422143023"
+            },
+            "links": {
+                "self": "https://api.bookwhen.com/v2/locations/e3onkfe8q4x6"
+            }
+        },
+        {
+            "id": "w0uh48ad3fm2",
+            "type": "location",
+            "attributes": {
+                "address_text": "Zoom",
+                "additional_info": "Online",
+                "latitude": 49.21879,
+                "longitude": -2.12625,
+                "zoom": 10,
+                "map_url": "https://cdn.bookwhen.com/blank_map.png?v=20230422143101"
+            },
+            "links": {
+                "self": "https://api.bookwhen.com/v2/locations/w0uh48ad3fm2"
+            }
+        },
+        {
+            "id": "7e173fxqy8x8",
+            "type": "location",
+            "attributes": {
+                "address_text": "Remote",
+                "additional_info": "",
+                "latitude": null,
+                "longitude": null,
+                "zoom": null,
+                "map_url": "https://cdn.bookwhen.com/blank_map.png?v=20230423072226"
+            },
+            "links": {
+                "self": "https://api.bookwhen.com/v2/locations/7e173fxqy8x8"
+            }
+        },
+        {
+            "id": "7e173fxqy8x8",
+            "type": "location",
+            "attributes": {
+                "address_text": "Remote",
+                "additional_info": "",
+                "latitude": null,
+                "longitude": null,
+                "zoom": null,
+                "map_url": "https://cdn.bookwhen.com/blank_map.png?v=20230423072226"
+            },
+            "links": {
+                "self": "https://api.bookwhen.com/v2/locations/7e173fxqy8x8"
+            }
+        }
+    ],
+    "links": {
+        "self": "https://api.bookwhen.com/v2/locations"
+    }
+}
