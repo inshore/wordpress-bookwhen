@@ -1,0 +1,18 @@
+{
+    "data": {
+        "id": "3wepl3we3kq9",
+        "type": "attachment",
+        "attributes": {
+            "title": "Cv 2023 Daniel Mullin April",
+            "file_url": "https://files.bookwhen.com/slrddey1fxzq/3wepl3we3kq9/uploaded_file",
+            "file_size_bytes": "75020",
+            "file_size_text": "73.3 KB",
+            "file_name": "CV_2023_daniel_mullin_april.pdf",
+            "file_type": "pdf",
+            "content_type": "application/pdf"
+        },
+        "links": {
+            "self": "https://api.bookwhen.com/v2/attachments/3wepl3we3kq9"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "data": {
+        "id": "w0uh48ad3fm2",
+        "type": "location",
+        "attributes": {
+            "address_text": "Zoom",
+            "additional_info": "Online",
+            "latitude": 49.21879,
+            "longitude": -2.12625,
+            "zoom": 10,
+            "map_url": "https://cdn.bookwhen.com/blank_map.png?v=20230422143101"
+        },
+        "links": {
+            "self": "https://api.bookwhen.com/v2/locations/w0uh48ad3fm2"
+        }
+    }
+}
